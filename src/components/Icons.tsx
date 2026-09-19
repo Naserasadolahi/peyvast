@@ -17,7 +17,7 @@ import {
   Sparkles,
   MapPin,
   Search,
-  SpidersHorizontal,
+  SlidersHorizontal,
   Layers,
 } from 'lucide-react'
 
