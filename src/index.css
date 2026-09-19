@@ -9,8 +9,8 @@
   --color-teal: #2dd4bf;
   --color-violet: #a78bfa;
   --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Lalezar", "Vazirmatn", sans-serif;
-  --font-brand: "Lalezar", "Vazirmatn", sans-serif;
+  --font-display: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
 }
 
 * {
