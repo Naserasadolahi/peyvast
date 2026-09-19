@@ -4,6 +4,7 @@ import MobileHeader from './components/MobileHeader'
 import Home from './pages/Home'
 import ModulePage from './pages/ModulePage'
 import ListingDetail from './pages/ListingDetail'
+import NewListing from './pages/NewListing'
 import Placeholder from './pages/Placeholder'
 
 export default function App() {
@@ -19,40 +20,21 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/m/:id" element={<ModulePage />} />
+              <Route path="/m/:id/new" element={<NewListing />} />
               <Route path="/listing/:id" element={<ListingDetail />} />
               <Route
                 path="/new"
                 element={
                   <Placeholder
                     title="ثبت آگهی جدید"
-                    description="فرم ثبت آگهی یا رزومه"
+                    description="از منوی ماژول‌ها، ماژول مورد نظر را انتخاب و سپس ثبت کنید"
                   />
                 }
               />
-              <Route
-                path="/mine"
-                element={<Placeholder title="آگهی‌های من" />}
-              />
-              <Route
-                path="/requests"
-                element={<Placeholder title="درخواست‌های همکاری" />}
-              />
+              <Route path="/mine" element={<Placeholder title="آگهی‌های من" />} />
+              <Route path="/requests" element={<Placeholder title="درخواست‌های همکاری" />} />
               <Route path="/wallet" element={<Placeholder title="کیف پول" />} />
-              <Route
-                path="/m/:id/new"
-                element={
-                  <Placeholder
-                    title="ثبت آگهی در ماژول"
-                    description="فرم ثبت آگهی در این ماژول"
-                  />
-                }
-              />
-              <Route
-                path="*"
-                element={
-                  <Placeholder title="صفحه یافت نشد" description="۴۰۴" />
-                }
-              />
+              <Route path="*" element={<Placeholder title="صفحه یافت نشد" description="۴۰۴" />} />
             </Routes>
           </div>
         </main>
