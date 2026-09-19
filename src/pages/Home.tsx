@@ -30,7 +30,7 @@ export default function Home() {
               >
                 <ModuleIcon name={m.icon} size={21} style={{ color: m.color }} />
               </div>
-              <span className="text-[0.7rem] text-white/45">{m.count} مورد</span>
+              <span className="text-[0.7rem] text-white/45">{`${m.count} مورد`}</span>
             </div>
             <h3 className="font-bold mt-4">{m.title}</h3>
             <p className="text-[0.78rem] text-white/50 mt-1.5 leading-6">{m.description}</p>
