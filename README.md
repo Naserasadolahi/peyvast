@@ -31,9 +31,9 @@ npm run dev
 ```
 src/
   components/
-    HeroSlider.tsx
-    Icons.tsx
-    ListingCard.tsx
+    HeroSlider.tsx      # اسلایدر صفحه اصلی
+    Icons.tsx           # آیکون‌ها
+    ListingCard.tsx     # کارت آگهی
     MobileHeader.tsx
     Sidebar.tsx
   pages/
@@ -41,13 +41,25 @@ src/
     ModulePage.tsx
     ListingDetail.tsx
     Placeholder.tsx
-  data.ts
+  data.ts               # داده‌های نمونه و تعریف ماژول‌ها
   types.ts
   App.tsx
   main.tsx
-  index.css
+  index.css             # Tailwind + تم سفارشی
 ```
+
+## نکات توسعه
+
+- برای اتصال به backend واقعی (مثل Supabase) می‌توانید `data.ts` را با API جایگزین کنید.
+- رنگ‌های ماژول‌ها در `data.ts` تعریف شده‌اند.
+- مسیریابی با `react-router-dom` انجام می‌شود.
 
 ## لایسنس
 
 این کد برای استفاده شخصی و توسعه پروژه پیوست ارائه شده است.
+
+## Backend (Supabase)
+
+راهنمای کامل: فایل `SUPABASE-SETUP.md`
+
+بدون تنظیم `.env` اپ با localStorage کار می‌کند (دمو).
